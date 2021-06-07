@@ -10,10 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img src="./images/logo.png" width="70" height="20" alt="Logo">
-        <button class="button">CURRÍCULUM</button>
-        <button class="button is-secondary">CURRÍCULUM</button>
-    </header>
+    <div class="wrapper">
+        <header class="header">
+            <img src="./images/logo.png" width="70" height="20" alt="Logo">
+            <nav class="menu">
+                <ul>
+                    <li><a class="is-active" href="#main">HOLA</a></li>
+                    <li><a href="#projects">PROYECTOS</a></li>
+                    <li><a href="#contact">HABLEMOS</a></li>
+                </ul>
+            </nav>
+            <button class="button">CURRÍCULUM</button>
+        </header>
+    
+        <section class="hero" id="main">
+            <div class="hero-image">
+                <img src="./images/jaume.png" alt="Foto de Jaume">
+            </div>
+            <div class="hero-description">
+                <h1>
+                    <span>¡Hola a todos!</span>
+                    <span>Soy Jaume</span>
+                </h1>
+                <p>Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
+                <div class="hero-social">
+                    <a class="button-icon" href="tel:3265465135"><img src="./icons/phone.svg" alt="Icono de Telefono"></a>
+                    <a class="button-icon" href="#"><img src="./icons/mail.svg" alt="Icono de Mail"></a>
+                    <a class="button-icon" href="#"><img src="./icons/instagram.svg" alt="Icono de Instagram"></a>
+                    <a class="button-icon" href="#"><img src="./icons/twitter.svg" alt="Icono de Twitter"></a>
+                </div>
+                <a class="button" href="#">descargar cURRÍCULUM</a>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

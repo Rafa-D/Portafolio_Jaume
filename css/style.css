@@ -1,5 +1,10 @@
 @import"./button.css";
+@import"./button-icon.css";
 @import"./header.css";
+@import"./hero.css";
+@import"./wrapper.css";
+@import"./menu.css";
+
 
 :root{
     font-size: 62.5%;
@@ -20,10 +25,11 @@
 }
 
 body{
-    padding: 0;
     margin: 0;
+    padding: 0;
     background: var(--gradient);
     min-block-size: 100vh;
     font: var(--body1);
+    color: var(--purple);
 }
 
