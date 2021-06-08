@@ -1,0 +1,20 @@
+.presentation{
+    font-size: 2.4rem;
+    line-height: 3.9rem;
+    text-align: center;
+    margin-block-start: 5.4rem;
+    margin-block-end: 8rem;
+}
+
+.presentation p{
+    margin-block-start: 2.4rem;
+    margin-block-end: 2.4rem;
+}
+
+.presentation p:nth-of-type(2){
+    font-weight: bold;
+}
+
+.presentation img{
+    vertical-align: middle;
+}
