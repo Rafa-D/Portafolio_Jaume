@@ -5,7 +5,12 @@
 @import"./wrapper.css";
 @import"./menu.css";
 @import"./presentation.css";
-@import"./testimony.css";
+@import"./comments.css";
+@import"./project.css";
+@import"./social.css";
+@import"./footer.css";
+@import"./form.css";
+@import"./title.css";
 
 
 :root{

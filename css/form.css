@@ -1,0 +1,42 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-inline-size: 54rem;
+    margin: auto;
+    margin-block-end: 8rem;
+}
+
+.form .title{
+    margin: 0;
+}
+
+.form p{
+    color: var(--white);
+    margin: 0;
+    text-align: center;
+}
+
+.form label{
+    display: flex;
+    flex-direction: column;
+    font: var(--button);
+}
+
+.form input, .form textarea{
+    border: 0.2rem solid #858C94;
+    border-radius: 0.8rem;
+    padding-inline-start: 1.6rem;
+    padding-inline-end: 1.6rem;
+    padding-block-start: 1.2rem;
+    padding-block-end: 1.2rem;
+    font: var(--body1);
+    margin-block-start: 0.8rem;
+}
+
+@media screen and (min-width:768px){
+    .form .title{
+        align-self: stretch;
+        text-align: center;
+    }
+}

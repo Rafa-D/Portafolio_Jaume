@@ -10,20 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <img src="./images/logo.png" width="70" height="20" alt="Logo">
+                <nav class="menu" aria-label="main-navigation">
+                    <ul>
+                        <li><a class="is-active" href="#main">HOLA</a></li>
+                        <li><a href="#project">PROYECTOS</a></li>
+                        <li><a href="#contact">HABLEMOS</a></li>
+                    </ul>
+                </nav>
+                <button class="button">CURRÍCULUM</button>
+            </div>
+        </div>
+    </header>
+
     <div class="wrapper">
-        <header class="header">
-            <img src="./images/logo.png" width="70" height="20" alt="Logo">
-            <nav class="menu">
-                <ul>
-                    <li><a class="is-active" href="#main">HOLA</a></li>
-                    <li><a href="#projects">PROYECTOS</a></li>
-                    <li><a href="#contact">HABLEMOS</a></li>
-                </ul>
-            </nav>
-            <button class="button">CURRÍCULUM</button>
-        </header>
-    
-        <section class="hero" id="main">
+        <section aria-label="main" class="hero" id="main">
             <div class="hero-image">
                 <img src="./images/jaume.png" alt="Foto de Jaume">
             </div>
@@ -33,7 +37,7 @@
                     <span>Soy Jaume</span>
                 </h1>
                 <p>Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
-                <div class="hero-social">
+                <div class="social">
                     <a class="button-icon" href="tel:3265465135"><img src="./icons/phone.svg" alt="Icono de Telefono"></a>
                     <a class="button-icon" href="#"><img src="./icons/mail.svg" alt="Icono de Mail"></a>
                     <a class="button-icon" href="#"><img src="./icons/instagram.svg" alt="Icono de Instagram"></a>
@@ -42,18 +46,109 @@
                 <a class="button" href="#">descargar cURRÍCULUM</a>
             </div>
         </section>
-        <section class="presentation">
+        <div class="presentation">
             <p>A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles</p>
             <p>Aquí hay algunos que me gustaría compartir.</p>
             <img src="./images/arrowdown.png" alt="Imagen de flecha">
-        </section>
-        <section class="testimony">
+        </div>
+
+        <div class="project" id="project">
+            <div class="project-image">
+                <img src="./images/mac.png" alt="Imagen de un MAC">
+            </div>
+            <div class="project-description">
+                <a class="title" target="_blank" href="#">leonidasesteban.com</a>
+                <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+                    tus habilidades como desarrollador Front-End.</p>
+                <a target="_blank" href="#" class="button">VER PROYECTO</a>
+                <a target="_blank" href="#" class="button is-secondary">VER CóDIGO</a>
+            </div>
+        </div>
+
+        <div class="comments">
             <figure>
                 <img src="./images/photo.png" alt="Foto de testimonio">
             </figure>
             <p>"Jaume ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses ".</p>
             <span><caption>LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</caption></span>
-        </section>
+        </div>
+
+        <div class="project">
+            <div class="project-image">
+                <img src="./images/ipad.png" alt="Imagen de un MAC">
+            </div>
+            <div class="project-description">
+                <a class="title" target="_blank" href="#">MARVOL</a>
+                <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+                    tus habilidades como desarrollador Front-End.</p>
+                <a target="_blank" href="#" class="button">VER PROYECTO</a>
+                <a target="_blank" href="#" class="button is-secondary">VER CóDIGO</a>
+            </div>
+        </div>
+
+        <div class="comments">
+            <figure>
+                <img src="./images/photo2.png" alt="Foto de testimonio">
+            </figure>
+            <p>"Jaume ha superado mis expectativas desde el diseño hasta el desarrollo".</p>
+            <span><caption>JASON LOPEZ / COFUNDADOR Y CEO MARVOL</caption></span>
+        </div>
+
+        <div class="project">
+            <div class="project-image">
+                <img src="./images/iphone.png" alt="Imagen de un MAC">
+            </div>
+            <div class="project-description">
+                <a class="title" target="_blank" href="#">NETNET</a>
+                <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+                    tus habilidades como desarrollador Front-End.</p>
+                <a target="_blank" href="#" class="button">VER PROYECTO</a>
+                <a target="_blank" href="#" class="button is-secondary">VER CóDIGO</a>
+            </div>
+        </div>
+
+        <div class="comments">
+            <figure>
+                <img src="./images/photo3.png" alt="Foto de testimonio">
+            </figure>
+            <p>"Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos".</p>
+            <span><caption>MARCO CORTEZ / NETNET</caption></span>
+        </div>
+
+        <form class="form" action="" method="GET">
+            <h2 class="title">HABLEMOS</h2>
+            <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
+            <label for="form-name">
+                Nombre completo
+                <input required name="name" id="form-name" type="text" placeholder="Juan">
+            </label>
+            <label for="form-email">
+                Correo electrónico
+                <input required name="email" id="form-email" type="email" placeholder="Juan@gmail.com">
+            </label>
+            <label for="form-message">
+                Mensaje
+                <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="7"></textarea>
+            </label>
+            <button class="button" type="submit">ENVIAR MENSAJE</button>
+        </form>
+        <footer class="footer" id="contact">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" width="70" height="20" alt="Logo">
+                </div>
+                <div class="social">
+                    <a class="button-icon" href="tel:3265465135"><img src="./icons/phone.svg" alt="Icono de Telefono"></a>
+                    <a class="button-icon" href="#"><img src="./icons/mail.svg" alt="Icono de Mail"></a>
+                    <a class="button-icon" href="#"><img src="./icons/instagram.svg" alt="Icono de Instagram"></a>
+                    <a class="button-icon" href="#"><img src="./icons/twitter.svg" alt="Icono de Twitter"></a>
+                </div>
+                <div class="footer-copy">
+                    <p>Hecho con el ♥ por Jaume. </p>
+                    <p>Copyright 2021 - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

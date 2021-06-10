@@ -1,0 +1,35 @@
+.project{
+    padding-block-start: 4rem;
+    padding-block-end: 4rem;
+}
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.project-image img{
+    max-inline-size: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .project{
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+        padding-block-start: 8rem;
+        padding-block-end: 8rem;
+    }
+
+    .project-description{
+        flex: 1;
+    }
+
+    .project:nth-child(odd) .testimony-image{
+        order: 2;
+        flex: 1;
+        text-align: center ;
+    }
+}
+

@@ -1,0 +1,12 @@
+.title{
+    align-self: flex-start;
+    background: var(--purple);
+    color: var(--white);
+    font: var(--headLine5);
+    padding-block-start: 0.4rem;
+    padding-block-end: 0.4rem;
+    padding-inline-start: 0.8rem;
+    padding-inline-end: 0.8rem;
+    text-decoration: none;
+    box-shadow: -0.4rem 0.4rem 0 var(--white);
+}
