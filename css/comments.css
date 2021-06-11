@@ -5,8 +5,9 @@
     margin-block-end: 4rem;
     background: rgba(255, 255, 255,0.2);
     border-radius: 2.4rem;
-    border: 4px solid radial-gradient(83.14% 78.52% to -12.32% -18.69%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 100%);
-    backdrop-filter: blur(39.7657px);
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    backdrop-filter: blur(40px); 
     z-index: -1;
 }
 
