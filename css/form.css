@@ -4,7 +4,9 @@
     gap: 1.6rem;
     max-inline-size: 54rem;
     margin: auto;
+    margin-block-start: 4rem;
     margin-block-end: 8rem;
+    padding-block-start: 8rem;
 }
 
 .form .title{

@@ -1,12 +1,13 @@
 .presentation{
-    font-size: 2.4rem;
-    line-height: 3.9rem;
+    font: var(--headLine5);
     text-align: center;
-    margin-block-start: 5.4rem;
-    margin-block-end: 8rem;
+    padding-block-start: 4rem;
+    padding-block-end: 4rem;
+    max-inline-size: 90rem;
 }
 
 .presentation p{
+    font-weight: 400;
     margin-block-start: 2.4rem;
     margin-block-end: 2.4rem;
 }
@@ -17,4 +18,17 @@
 
 .presentation img{
     vertical-align: middle;
+}
+
+@media screen and (min-width: 1024px){
+    .presentation{
+        margin: auto;
+        padding-block-start: 20rem;
+        padding-block-end: 20rem;
+    }
+
+    .presentation p:nth-of-type(1){
+        font: var(--headLine4);
+        font-weight: 300;
+    }
 }

@@ -24,6 +24,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    padding-block-end: 1.4rem;
 }
 
 @media screen and (min-width:768px){
@@ -46,6 +47,14 @@
 }
 
 @media screen and (min-width:1024px){
+    .hero{
+        margin-block-end: 10rem
+    }
+
+    .hero-description{
+        align-self: center;
+    }
+
     .hero-image img{
         inline-size: 50rem;
         block-size: 50.4rem;
